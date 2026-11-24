@@ -8,6 +8,8 @@ name: GPU tests (simulated H100)
 
 on:
   workflow_dispatch:
+  push:
+    branches: [rebased-main]
   pull_request:
     branches: [main]
     # Everything the gpu feature builds from: cudarc and the feature list (Cargo files), the
